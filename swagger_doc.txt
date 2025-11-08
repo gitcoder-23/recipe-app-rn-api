@@ -1,0 +1,53 @@
+Document API Endpoints
+http://localhost:5001/docs
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Favorite:
+ *       type: object
+ *       required:
+ *         - userId
+ *         - recipeId
+ *         - title
+ *       properties:
+ *         userId:
+ *           type: integer
+ *           description: The user ID
+ *         recipeId:
+ *           type: integer
+ *           description: The recipe ID
+ *         title:
+ *           type: string
+ *           description: The recipe title
+ *         image:
+ *           type: string
+ *           description: The recipe image URL
+ *         cookTime:
+ *           type: string
+ *           description: The cooking time for the recipe
+ *         servings:
+ *           type: integer
+ *           description: The number of servings for the recipe
+ * 
+ * /api/favorites:
+ *   post:
+ *     summary: Create a new favorite recipe
+ *     operationId: addFavorite
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Favorite'
+ *     responses:
+ *       '201':
+ *         description: Successfully added favorite
+ *       '400':
+ *         description: Missing required fields
+ *       '500':
+ *         description: Internal server error
+ */
+app.post("/api/favorites", async (req, res) => {
+  // Your existing code...
+});

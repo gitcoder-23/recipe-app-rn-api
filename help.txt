@@ -1,0 +1,13 @@
+
+
+Drizzle Kit is a CLI tool for managing SQL database migrations with Drizzle.
+https://orm.drizzle.team/docs/kit-overview
+
+// Neon Ship faster with Postgres
+https://neon.com/?ref=aapy4
+npx neonctl@latest init
+
+// after DB and drizzle setup then run vid: 25: 41
+1> npx drizzle-kit generate
+2> npx drizzle-kit migrate
+
