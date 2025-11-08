@@ -1,4 +1,4 @@
-
+all connected with github account
 
 Drizzle Kit is a CLI tool for managing SQL database migrations with Drizzle.
 https://orm.drizzle.team/docs/kit-overview
@@ -10,4 +10,10 @@ npx neonctl@latest init
 // after DB and drizzle setup then run vid: 25: 41
 1> npx drizzle-kit generate
 2> npx drizzle-kit migrate
+
+
+// BR delpoy 
+render.com
+
+https://recipe-app-rn-api.onrender.com/
 

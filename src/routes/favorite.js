@@ -32,6 +32,17 @@ router.post("/api/favorites", async (req, res) => {
   }
 });
 
+router.get("/api/favorites", async (req, res) => {
+  try {
+    const listFavorites = await db.select().from(favoritesTable);
+
+    res.status(200).json(listFavorites);
+  } catch (error) {
+    console.log("Error fetching the favorites", error);
+    res.status(500).json({ error: "Something went wrong" });
+  }
+});
+
 router.get("/api/favorites/:userId", async (req, res) => {
   try {
     const { userId } = req.params;
